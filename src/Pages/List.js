@@ -73,7 +73,8 @@ const List = () => {
 
                             <button className="btn btn-dark border-0 ms-3 w-25 rounded-0" onClick={addTodo}>New Todo +</button>
                         </div>
-                        {tasks.map((task) => {
+                       <div className="to-do-list">
+                       {tasks.map((task) => {
                             return (
                                 <>
                                     <div className="card border-0 shadow p-2 mb-3" id={task.id} key={task.id} onClick={viewExpanded}>
@@ -82,6 +83,7 @@ const List = () => {
                                 </>
                             )
                         })}
+                       </div>
                         {/* <SweetPagination
                             currentPageData={setCurrentPageData}
                             getData={tasks}

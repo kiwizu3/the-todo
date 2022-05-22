@@ -48,3 +48,9 @@ body,
   bottom: 1rem;
   right: 1rem;
 }
+
+
+.to-do-list{
+  height: 75vh;
+  overflow-y: scroll;
+}
