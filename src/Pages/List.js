@@ -18,7 +18,6 @@ const List = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 setTasks(data);
             })
     }, [])
@@ -33,13 +32,12 @@ const List = () => {
             completed: false
         }
 
-        console.log(newTodo)
         fetch(url, {
             method: "POST",
             mode: "cors",
             body: JSON.stringify(newTodo)
         }).then(response => {
-            console.log(response.json());
+            // console.log(response.json());
             // On success update state
             setTasks([newTodo, ...tasks])
         }); // parses response to JSON
@@ -55,7 +53,6 @@ const List = () => {
         )
     })
 
-    console.log(newText)
     return (
         <div className="container">
 

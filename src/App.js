@@ -11,7 +11,6 @@ const App = () => {
     setLoggedIn(JSON.parse(localStorage.getItem('is-logged')))
   }, [setLoggedIn])
 
-  console.log(LoggedIn, "login")
   return (
     <>
       {LoggedIn ? <Home setLoggedIn={setLoggedIn} /> : <Login setLoggedIn={setLoggedIn}/>}

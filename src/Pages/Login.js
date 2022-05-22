@@ -30,7 +30,6 @@ const Login = ({setLoggedIn}) => {
         setIncorrect(false)
     }, [setIncorrect])
 
-    console.log(loginInfo)
     return (
         <>
             <div className="container h-100">
